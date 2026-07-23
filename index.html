@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hamad Maulidi Yahaya | Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #0b3d91;
+            color: white;
+            padding: 20px 10%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: white;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #0b3d91;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .about, .contact {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .education, .experience, .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill {
+            background: #0b3d91;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+
+        .social a {
+            margin: 10px;
+            text-decoration: none;
+            color: #0b3d91;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Hamad Yahaya</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Hamad Maulidi Yahaya</h1>
+
+    <p>Procurement and Supply Professional</p>
+
+    <p>
+        Welcome to my personal website. Here you can learn more about
+        my education, professional experience, skills, achievements,
+        and career journey.
+    </p>
+
+    <br>
+
+    <a href="#about" class="btn">Learn More About Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            My name is Hamad Maulidi Yahaya. I am a Procurement and Supply
+            professional with an interest in procurement, supply chain,
+            inventory management, supplier coordination, and business.
+        </p>
+
+        <br>
+
+        <p>
+            I am passionate about learning new skills, developing my
+            professional career, working with people, and contributing
+            positively to organizations and communities.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="education">
+
+        <div class="card">
+            <h3>Ordinary Diploma in Procurement and Supply</h3>
+
+            <p>
+                The Mwalimu Nyerere Memorial Academy (MNMA)
+            </p>
+
+            <p>
+                Field: Procurement and Supply
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience">
+
+        <div class="card">
+            <h3>Field Training – BASATA</h3>
+
+            <p>
+                Gained practical exposure to organizational activities,
+                communication, teamwork, and professional working
+                environments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Field Training – BRELA</h3>
+
+            <p>
+                Gained practical experience in workplace activities,
+                communication, teamwork, inventory-related activities,
+                and supplier coordination.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills & Competencies</h2>
+
+    <div class="skills-list">
+
+        <span class="skill">Procurement</span>
+        <span class="skill">Supply Chain</span>
+        <span class="skill">Inventory Management</span>
+        <span class="skill">Supplier Coordination</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Microsoft Office</span>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact">
+
+        <p><strong>Name:</strong> Hamad Maulidi Yahaya</p>
+
+        <p><strong>Email:</strong> Your Email Here</p>
+
+        <p><strong>Phone:</strong> Your Phone Number Here</p>
+
+        <br>
+
+        <div class="social">
+            <p><strong>Social Media:</strong></p>
+
+            <a href="#" target="_blank">Facebook</a>
+
+            <a href="#" target="_blank">Instagram</a>
+
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Hamad Maulidi Yahaya. All Rights Reserved.
+    </p>
+
+    <p>
+        Personal Website
+    </p>
+
+</footer>
+
+</body>
+</html>
