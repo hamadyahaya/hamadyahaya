@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="icon" type="image/png" href="favicon.png">
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HAMAD M YAHAYA | Procurement and Supply Student</title>
+    <title>Hamad Maulidi Yahaya | Procurement and Supply Student</title>
 
     <meta name="description"
-        content="Official personal website of HAMAD M YAHAYA, a Procurement and Supply student from Tanzania. Explore his education, field training experience, skills, professional journey, and CV.">
+        content="Official personal website of Hamad Maulidi Yahaya, a Procurement and Supply student from Tanzania. Explore his education, field training experience, skills, professional journey, and CV.">
 
     <link rel="canonical"
         href="https://hamadyahaya.github.io/hamadyahaya/">
@@ -17,6 +18,7 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+
 
     <!-- OPEN GRAPH -->
 
@@ -53,13 +55,16 @@
 
     <style>
 
+        /* =========================
+           GENERAL
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
-
 
         body {
             font-family: Arial, sans-serif;
@@ -69,7 +74,9 @@
         }
 
 
-        /* HEADER */
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             background: #0b3d91;
@@ -80,25 +87,21 @@
             z-index: 1000;
         }
 
-
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-
         nav h2 {
             font-size: 21px;
         }
-
 
         nav ul {
             list-style: none;
             display: flex;
             gap: 18px;
         }
-
 
         nav ul li a {
             color: white;
@@ -107,13 +110,14 @@
             font-size: 15px;
         }
 
-
         nav ul li a:hover {
             text-decoration: underline;
         }
 
 
-        /* HOME */
+        /* =========================
+           HOME / HERO
+        ========================= */
 
         .hero {
             background: #0b3d91;
@@ -121,7 +125,6 @@
             padding: 65px 8%;
             text-align: center;
         }
-
 
         .hero img {
             width: 140px;
@@ -133,13 +136,11 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-
         .hero h1 {
             font-size: 40px;
             color: white;
             margin-bottom: 5px;
         }
-
 
         .hero h2 {
             color: white;
@@ -148,7 +149,6 @@
             font-weight: 500;
         }
 
-
         .hero p {
             font-size: 18px;
             max-width: 750px;
@@ -156,7 +156,9 @@
         }
 
 
-        /* BUTTONS */
+        /* =========================
+           BUTTONS
+        ========================= */
 
         .btn {
             display: inline-block;
@@ -170,18 +172,18 @@
             font-size: 15px;
         }
 
-
         .btn:hover {
             background: #e8eef8;
         }
 
 
-        /* SECTIONS */
+        /* =========================
+           SECTIONS
+        ========================= */
 
         section {
             padding: 55px 8%;
         }
-
 
         section h2 {
             text-align: center;
@@ -191,7 +193,9 @@
         }
 
 
-        /* ABOUT AND CONTACT */
+        /* =========================
+           ABOUT & CONTACT
+        ========================= */
 
         .about,
         .contact {
@@ -203,15 +207,19 @@
         }
 
 
-        /* EDUCATION AND EXPERIENCE */
+        /* =========================
+           EDUCATION & EXPERIENCE
+        ========================= */
 
         .education,
         .experience {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
             gap: 20px;
         }
-
 
         .card {
             background: white;
@@ -220,14 +228,15 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
-
         .card h3 {
             color: #0b3d91;
             margin-bottom: 10px;
         }
 
 
-        /* SKILLS */
+        /* =========================
+           SKILLS
+        ========================= */
 
         .skills-list {
             display: flex;
@@ -235,7 +244,6 @@
             gap: 9px;
             justify-content: center;
         }
-
 
         .skill {
             background: #0b3d91;
@@ -246,30 +254,31 @@
         }
 
 
-        /* CONTACT */
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact p {
             margin-bottom: 9px;
         }
-
 
         .contact a {
             color: #0b3d91;
             text-decoration: none;
         }
 
-
         .contact a:hover {
             text-decoration: underline;
         }
-
 
         .social {
             margin-top: 10px;
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #0b3d91;
@@ -279,26 +288,24 @@
         }
 
 
-        /* MOBILE PHONE */
+        /* =========================
+           MOBILE / PHONE
+        ========================= */
 
         @media (max-width: 768px) {
-
 
             header {
                 padding: 10px 4%;
             }
-
 
             nav {
                 flex-direction: column;
                 gap: 8px;
             }
 
-
             nav h2 {
                 font-size: 18px;
             }
-
 
             nav ul {
                 flex-wrap: wrap;
@@ -306,16 +313,16 @@
                 gap: 6px 10px;
             }
 
-
             nav ul li a {
                 font-size: 12px;
             }
 
 
+            /* SMALL HOME */
+
             .hero {
                 padding: 35px 5%;
             }
-
 
             .hero img {
                 width: 70px;
@@ -324,18 +331,15 @@
                 border-width: 3px;
             }
 
-
             .hero h1 {
                 font-size: 24px;
                 margin-bottom: 3px;
             }
 
-
             .hero h2 {
                 font-size: 16px;
                 margin-bottom: 8px;
             }
-
 
             .hero p {
                 font-size: 14px;
@@ -344,22 +348,27 @@
             }
 
 
+            /* BUTTONS */
+
             .btn {
                 padding: 8px 13px;
                 font-size: 13px;
             }
 
 
+            /* SECTIONS */
+
             section {
                 padding: 35px 5%;
             }
-
 
             section h2 {
                 font-size: 22px;
                 margin-bottom: 18px;
             }
 
+
+            /* ABOUT & CONTACT */
 
             .about,
             .contact {
@@ -368,22 +377,27 @@
             }
 
 
+            /* CARDS */
+
             .card {
                 padding: 17px;
                 font-size: 14px;
             }
-
 
             .card h3 {
                 font-size: 17px;
             }
 
 
+            /* SKILLS */
+
             .skill {
                 padding: 6px 10px;
                 font-size: 12px;
             }
 
+
+            /* FOOTER */
 
             footer {
                 padding: 18px;
@@ -400,7 +414,9 @@
 <body>
 
 
-    <!-- HEADER -->
+    <!-- =========================
+         HEADER
+    ========================= -->
 
     <header>
 
@@ -445,12 +461,16 @@
     </header>
 
 
-    <!-- HOME -->
+    <!-- =========================
+         HOME
+    ========================= -->
 
     <section class="hero" id="home">
 
-        <img src="260721214706132.JPG"
-             alt="Hamad Maulidi Yahaya">
+        <img
+            src="260721214706132.JPG"
+            alt="Hamad Maulidi Yahaya"
+        >
 
         <h1>
             Hamad Maulidi Yahaya
@@ -466,15 +486,19 @@
             and career journey.
         </p>
 
-
-        <a href="#about" class="btn">
+        <a
+            href="#about"
+            class="btn"
+        >
             Learn More About Me
         </a>
 
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
     <section id="about">
 
@@ -528,7 +552,9 @@
     </section>
 
 
-    <!-- EDUCATION -->
+    <!-- =========================
+         EDUCATION
+    ========================= -->
 
     <section id="education">
 
@@ -575,7 +601,9 @@
     </section>
 
 
-    <!-- EXPERIENCE -->
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
 
     <section id="experience">
 
@@ -619,7 +647,9 @@
     </section>
 
 
-    <!-- SKILLS -->
+    <!-- =========================
+         SKILLS
+    ========================= -->
 
     <section id="skills">
 
@@ -629,28 +659,46 @@
 
         <div class="skills-list">
 
-            <span class="skill">Procurement</span>
+            <span class="skill">
+                Procurement
+            </span>
 
-            <span class="skill">Supply Chain Management</span>
+            <span class="skill">
+                Supply Chain Management
+            </span>
 
-            <span class="skill">Inventory Management</span>
+            <span class="skill">
+                Inventory Management
+            </span>
 
-            <span class="skill">Supplier Coordination</span>
+            <span class="skill">
+                Supplier Coordination
+            </span>
 
-            <span class="skill">Communication</span>
+            <span class="skill">
+                Communication
+            </span>
 
-            <span class="skill">Teamwork</span>
+            <span class="skill">
+                Teamwork
+            </span>
 
-            <span class="skill">Problem Solving</span>
+            <span class="skill">
+                Problem Solving
+            </span>
 
-            <span class="skill">Microsoft Office</span>
+            <span class="skill">
+                Microsoft Office
+            </span>
 
         </div>
 
     </section>
 
 
-    <!-- CV -->
+    <!-- =========================
+         CV
+    ========================= -->
 
     <section id="cv">
 
@@ -665,23 +713,25 @@
                 education, experience, skills, and professional background.
             </p>
 
-            <div style="margin-top: 20px; text-align: center;">
+            <div
+                style="margin-top: 20px; text-align: center;"
+            >
 
-                <a href="HAMAD_CV.pdf"
-                   target="_blank"
-                   class="btn">
-
+                <a
+                    href="HAMAD_CV.pdf"
+                    target="_blank"
+                    class="btn"
+                >
                     View My CV
-
                 </a>
 
 
-                <a href="HAMAD_CV.pdf"
-                   download
-                   class="btn">
-
+                <a
+                    href="HAMAD_CV.pdf"
+                    download
+                    class="btn"
+                >
                     Download My CV
-
                 </a>
 
             </div>
@@ -691,7 +741,9 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- =========================
+         CONTACT
+    ========================= -->
 
     <section id="contact">
 
@@ -708,9 +760,12 @@
 
 
             <p>
+
                 <strong>Email:</strong>
 
-                <a href="mailto:hamadyahaya200@gmail.com">
+                <a
+                    href="mailto:hamadyahaya200@gmail.com"
+                >
                     hamadyahaya200@gmail.com
                 </a>
 
@@ -718,9 +773,12 @@
 
 
             <p>
+
                 <strong>Phone:</strong>
 
-                <a href="tel:+255619797651">
+                <a
+                    href="tel:+255619797651"
+                >
                     +255 619 797 651
                 </a>
 
@@ -759,7 +817,9 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <footer>
 
