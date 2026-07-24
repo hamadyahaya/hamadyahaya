@@ -1,450 +1,302 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Personal website of HAMAD M YAHAYA, Procurement and Supply Student.">
-
-<meta name="author" content="HAMAD M YAHAYA">
-
-<title>HAMAD M YAHAYA | Personal Website</title>
-
-
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="./favicon.png">
-<link rel="shortcut icon" type="image/png" href="./favicon.png">
-<link rel="apple-touch-icon" href="./favicon.png">
-
-
-<style>
-
-    /* ========================================
-       RESET
-    ======================================== */
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-    }
-
-
-    /* ========================================
-       BODY
-    ======================================== */
-
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background: #f5f7fa;
-        color: #333;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-
-    /* ========================================
-       HEADER
-    ======================================== */
-
-    header {
-        background: #0b3d91;
-        color: white;
-        padding: 20px 8%;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    nav h2 {
-        font-size: 22px;
-        white-space: nowrap;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        list-style: none;
-    }
-
-    nav ul li a {
-        color: white;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-        color: #dbe7ff;
-    }
-
-
-    /* ========================================
-       HERO
-    ======================================== */
-
-    .hero {
-        background: white;
-        padding: 80px 10%;
-        text-align: center;
-    }
-
-    .profile-image {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid #0b3d91;
-        margin-bottom: 20px;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-        color: #0b3d91;
-        margin-bottom: 10px;
-    }
-
-    .profession {
-        font-size: 20px;
-        font-weight: bold;
-        color: #555;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 18px;
-        max-width: 800px;
-        margin: 0 auto 20px;
-    }
-
-
-    /* ========================================
-       BUTTONS
-    ======================================== */
-
-    .btn {
-        display: inline-block;
-        background: #0b3d91;
-        color: white;
-        padding: 12px 25px;
-        margin: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .btn:hover {
-        background: #082f70;
-        transform: translateY(-2px);
-    }
-
-
-    /* ========================================
-       SECTIONS
-    ======================================== */
-
-    section {
-        padding: 60px 10%;
-    }
-
-    section h2 {
-        text-align: center;
-        color: #0b3d91;
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-
-
-    /* ========================================
-       ABOUT
-    ======================================== */
-
-    .about {
-        background: white;
-        max-width: 900px;
-        margin: auto;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    .about p {
-        margin-bottom: 15px;
-        text-align: justify;
-    }
-
-
-    /* ========================================
-       EDUCATION
-    ======================================== */
-
-    .education {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-
-    /* ========================================
-       EXPERIENCE
-    ======================================== */
-
-    .experience {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-    }
-
-
-    /* ========================================
-       CARDS
-    ======================================== */
-
-    .card {
-        background: white;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    .card h3 {
-        color: #0b3d91;
-        margin-bottom: 12px;
-    }
-
-    .card p {
-        margin-bottom: 8px;
-    }
-
-
-    /* ========================================
-       SKILLS
-    ======================================== */
-
-    .skills-list {
-        max-width: 900px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .skill {
-        background: #0b3d91;
-        color: white;
-        padding: 10px 18px;
-        border-radius: 20px;
-        font-weight: bold;
-    }
-
-
-    /* ========================================
-       CV
-    ======================================== */
-
-    .cv-box {
-        background: white;
-        max-width: 900px;
-        margin: auto;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    .cv-box p {
-        margin-bottom: 20px;
-    }
-
-
-    /* ========================================
-       CONTACT
-    ======================================== */
-
-    .contact {
-        background: white;
-        max-width: 900px;
-        margin: auto;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    .contact p {
-        margin-bottom: 12px;
-    }
-
-    .contact-link {
-        color: #0b3d91;
-        font-weight: bold;
-    }
-
-    .contact-link:hover {
-        text-decoration: underline;
-    }
-
-
-    /* ========================================
-       SOCIAL MEDIA
-    ======================================== */
-
-    .social {
-        margin-top: 20px;
-    }
-
-    .social a {
-        display: inline-block;
-        color: #0b3d91;
-        font-weight: bold;
-        margin: 5px 15px 5px 0;
-    }
-
-    .social a:hover {
-        text-decoration: underline;
-    }
-
-
-    /* ========================================
-       FOOTER
-    ======================================== */
-
-    footer {
-        background: #0b3d91;
-        color: white;
-        text-align: center;
-        padding: 25px;
-    }
-
-    footer p {
-        margin: 5px 0;
-    }
-
-
-    /* ========================================
-       MOBILE RESPONSIVE
-    ======================================== */
-
-    @media (max-width: 768px) {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Personal website of HAMAD M YAHAYA, Procurement and Supply Student.">
+    <meta name="author" content="HAMAD M YAHAYA">
+
+    <title>HAMAD M YAHAYA | Personal Website</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+        }
 
         header {
-            padding: 15px 5%;
+            background: #0b3d91;
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
         }
 
         nav {
-            flex-direction: column;
-            gap: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+            white-space: nowrap;
         }
 
         nav ul {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
         }
 
         nav ul li a {
-            font-size: 14px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #dbe7ff;
         }
 
         .hero {
-            padding: 60px 5%;
-        }
-
-        .hero h1 {
-            font-size: 32px;
-        }
-
-        .profession {
-            font-size: 18px;
-        }
-
-        section {
-            padding: 50px 5%;
-        }
-
-        section h2 {
-            font-size: 26px;
+            background: white;
+            padding: 80px 10%;
+            text-align: center;
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #0b3d91;
         }
 
-    }
+        .hero h1 {
+            font-size: 42px;
+            color: #0b3d91;
+            margin-bottom: 10px;
+        }
 
-</style>
-```
+        .profession {
+            font-size: 20px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 20px;
+        }
 
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #082f70;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #0b3d91;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .about,
+        .contact,
+        .cv-box {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .about p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .education,
+        .experience {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #0b3d91;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            margin-bottom: 8px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .skill {
+            background: #0b3d91;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .cv-box {
+            text-align: center;
+        }
+
+        .cv-box p {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+        }
+
+        .contact-link {
+            color: #0b3d91;
+            font-weight: bold;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 5px 15px 5px 0;
+            color: #0b3d91;
+            font-weight: bold;
+        }
+
+        .social a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 15px 5%;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 60px 5%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profession {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            section h2 {
+                font-size: 26px;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-```
-<!-- ========================================
-     HEADER / NAVIGATION
-========================================= -->
-
 <header>
-
     <nav>
-
         <h2>HAMAD M YAHAYA</h2>
 
         <ul>
-
-            <li>
-                <a href="#home">Home</a>
-            </li>
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#cv">CV</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
-
 </header>
-
-
-< ========================================
-     HOME
-========================================= >
 
 <section class="hero" id="home">
 
@@ -473,11 +325,6 @@
     </a>
 
 </section>
-
-
-<!========================================
-     ABOUT ME
-========================================= >
 
 <section id="about">
 
@@ -522,11 +369,6 @@
 
 </section>
 
-
-<!-- ========================================
-     EDUCATION
-========================================= -->
-
 <section id="education">
 
     <h2>Education</h2>
@@ -555,11 +397,10 @@
             </p>
 
             <p>
-                Studied an Ordinary Diploma program focused on
-                Procurement and Supply, gaining academic knowledge
-                and practical understanding of procurement, supply
-                chain management, inventory management, logistics,
-                and supplier coordination.
+                Studied an Ordinary Diploma program focused on Procurement
+                and Supply, gaining academic knowledge and practical
+                understanding of procurement, supply chain management,
+                inventory management, logistics, and supplier coordination.
             </p>
 
         </div>
@@ -567,11 +408,6 @@
     </div>
 
 </section>
-
-
-<!-- ========================================
-     EXPERIENCE
-========================================= -->
 
 <section id="experience">
 
@@ -581,9 +417,7 @@
 
         <div class="card">
 
-            <h3>
-                Field Training – BASATA
-            </h3>
+            <h3>Field Training – BASATA</h3>
 
             <p>
                 Gained practical exposure to organizational activities,
@@ -593,12 +427,9 @@
 
         </div>
 
-
         <div class="card">
 
-            <h3>
-                Field Training – BRELA
-            </h3>
+            <h3>Field Training – BRELA</h3>
 
             <p>
                 Gained practical experience in workplace activities,
@@ -612,57 +443,24 @@
 
 </section>
 
-
-<!-- ========================================
-     SKILLS
-========================================= -->
-
 <section id="skills">
 
     <h2>Skills &amp; Competencies</h2>
 
     <div class="skills-list">
 
-        <span class="skill">
-            Procurement
-        </span>
-
-        <span class="skill">
-            Supply Chain Management
-        </span>
-
-        <span class="skill">
-            Inventory Management
-        </span>
-
-        <span class="skill">
-            Supplier Coordination
-        </span>
-
-        <span class="skill">
-            Communication
-        </span>
-
-        <span class="skill">
-            Teamwork
-        </span>
-
-        <span class="skill">
-            Problem Solving
-        </span>
-
-        <span class="skill">
-            Microsoft Office
-        </span>
+        <span class="skill">Procurement</span>
+        <span class="skill">Supply Chain Management</span>
+        <span class="skill">Inventory Management</span>
+        <span class="skill">Supplier Coordination</span>
+        <span class="skill">Communication</span>
+        <span class="skill">Teamwork</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Microsoft Office</span>
 
     </div>
 
 </section>
-
-
-<!-- ========================================
-     CV
-========================================= -->
 
 <section id="cv">
 
@@ -695,11 +493,6 @@
 
 </section>
 
-
-<!-- ========================================
-     CONTACT
-========================================= -->
-
 <section id="contact">
 
     <h2>Contact Me</h2>
@@ -711,9 +504,7 @@
             HAMAD M YAHAYA
         </p>
 
-
         <p>
-
             <strong>Email:</strong>
 
             <a
@@ -722,12 +513,9 @@
             >
                 hamadyahaya200@gmail.com
             </a>
-
         </p>
 
-
         <p>
-
             <strong>Phone:</strong>
 
             <a
@@ -736,11 +524,7 @@
             >
                 +255 619 797 651
             </a>
-
         </p>
-
-
-        <!-- SOCIAL MEDIA -->
 
         <div class="social">
 
@@ -748,40 +532,17 @@
                 <strong>Social Media:</strong>
             </p>
 
-            <a
-                href="#"
-                target="_blank"
-                rel="noopener"
-            >
-                Facebook
-            </a>
+            <a href="#" target="_blank">Facebook</a>
 
-            <a
-                href="#"
-                target="_blank"
-                rel="noopener"
-            >
-                Instagram
-            </a>
+            <a href="#" target="_blank">Instagram</a>
 
-            <a
-                href="#"
-                target="_blank"
-                rel="noopener"
-            >
-                LinkedIn
-            </a>
+            <a href="#" target="_blank">LinkedIn</a>
 
         </div>
 
     </div>
 
 </section>
-
-
-<!-- ========================================
-     FOOTER
-========================================= -->
 
 <footer>
 
@@ -794,7 +555,6 @@
     </p>
 
 </footer>
-```
 
 </body>
 </html>
