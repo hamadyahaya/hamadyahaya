@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Personal website of HAMAD M YAHAYA, Procurement and Supply Student.">
-    <meta name="author" content="HAMAD M YAHAYA">
+    <!-- SEO TITLE -->
+    <title>Hamad Maulidi Yahaya | Procurement and Supply Student</title>
 
-    <title>HAMAD M YAHAYA | Personal Website</title>
+    <!-- SEO DESCRIPTION -->
+    <meta name="description"
+        content="Official personal website of Hamad Maulidi Yahaya, a Procurement and Supply student from Tanzania. Explore his education, field training experience, skills, professional journey, and CV.">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
+    <!-- CANONICAL -->
+    <link rel="canonical"
+        href="https://hamadyahaya.github.io/hamadyahaya/">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title"
+        content="Hamad Maulidi Yahaya | Procurement and Supply Student">
+
+    <meta property="og:description"
+        content="Official personal website of Hamad Maulidi Yahaya. Explore his education, experience, skills, professional journey, and CV.">
+
+    <meta property="og:url"
+        content="https://hamadyahaya.github.io/hamadyahaya/">
+
+    <meta property="og:type"
+        content="website">
+
+
+    <!-- PERSON SCHEMA FOR GOOGLE -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Hamad Maulidi Yahaya",
+        "url": "https://hamadyahaya.github.io/hamadyahaya/",
+        "jobTitle": "Procurement and Supply Student",
+        "description": "Hamad Maulidi Yahaya is a Procurement and Supply student from Tanzania with academic knowledge and practical field training experience in procurement, supply chain management, inventory management, logistics, communication, teamwork, and supplier coordination.",
+        "email": "mailto:hamadyahaya200@gmail.com",
+        "telephone": "+255619797651",
+        "sameAs": [
+            "https://www.instagram.com/?hl=en"
+        ]
+    }
+
+    </script>
+
+
     <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -28,18 +77,18 @@
             color: #333;
         }
 
-        a {
-            text-decoration: none;
-        }
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             background: #0b3d91;
             color: white;
-            padding: 20px 8%;
+            padding: 18px 8%;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
         }
 
         nav {
@@ -49,517 +98,759 @@
         }
 
         nav h2 {
-            font-size: 22px;
-            white-space: nowrap;
+            font-size: 21px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
-            align-items: center;
+            gap: 18px;
         }
 
         nav ul li a {
             color: white;
+            text-decoration: none;
             font-weight: bold;
+            font-size: 15px;
         }
 
         nav ul li a:hover {
-            color: #dbe7ff;
+            text-decoration: underline;
         }
 
+
+        /* =========================
+           HOME / HERO
+        ========================= */
+
         .hero {
-            background: white;
-            padding: 80px 10%;
+            background: #0b3d91;
+            color: white;
+            padding: 65px 8%;
             text-align: center;
         }
 
-        .profile-image {
-            width: 180px;
-            height: 180px;
+        .hero img {
+            width: 140px;
+            height: 140px;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 20px;
-            border: 5px solid #0b3d91;
+            margin-bottom: 15px;
+            border: 4px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .hero h1 {
-            font-size: 42px;
-            color: #0b3d91;
-            margin-bottom: 10px;
+            font-size: 40px;
+            color: white;
+            margin-bottom: 5px;
         }
 
-        .profession {
-            font-size: 20px;
-            font-weight: bold;
-            color: #555;
-            margin-bottom: 20px;
+        .hero h2 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 500;
         }
 
         .hero p {
             font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto 20px;
+            max-width: 750px;
+            margin: 0 auto 20px auto;
         }
+
+
+        /* =========================
+           BUTTONS
+        ========================= */
 
         .btn {
             display: inline-block;
-            background: #0b3d91;
-            color: white;
-            padding: 12px 25px;
-            margin: 5px;
+            background: white;
+            color: #0b3d91;
+            padding: 11px 22px;
+            text-decoration: none;
             border-radius: 5px;
+            margin: 5px;
             font-weight: bold;
+            font-size: 15px;
         }
 
         .btn:hover {
-            background: #082f70;
+            background: #e8eef8;
         }
 
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
         section {
-            padding: 60px 10%;
+            padding: 55px 8%;
         }
 
         section h2 {
             text-align: center;
             color: #0b3d91;
-            margin-bottom: 30px;
-            font-size: 30px;
+            margin-bottom: 25px;
+            font-size: 29px;
         }
+
+
+        /* =========================
+           ABOUT & CONTACT
+        ========================= */
 
         .about,
-        .contact,
-        .cv-box {
+        .contact {
             background: white;
             border-radius: 10px;
-            padding: 30px;
+            padding: 28px;
             max-width: 900px;
             margin: auto;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         }
 
-        .about p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
+
+        /* =========================
+           EDUCATION & EXPERIENCE
+        ========================= */
 
         .education,
         .experience {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(250px, 1fr)
+            );
             gap: 20px;
         }
 
         .card {
             background: white;
-            padding: 25px;
+            padding: 23px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
         }
 
         .card h3 {
             color: #0b3d91;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
-        .card p {
-            margin-bottom: 8px;
-        }
+
+        /* =========================
+           SKILLS
+        ========================= */
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 9px;
             justify-content: center;
-            max-width: 900px;
-            margin: auto;
         }
 
         .skill {
             background: #0b3d91;
             color: white;
-            padding: 10px 18px;
+            padding: 9px 14px;
             border-radius: 20px;
-            font-weight: bold;
+            font-size: 14px;
         }
 
-        .cv-box {
-            text-align: center;
-        }
 
-        .cv-box p {
-            margin-bottom: 20px;
-        }
+        /* =========================
+           CONTACT
+        ========================= */
 
         .contact p {
-            margin-bottom: 12px;
+            margin-bottom: 9px;
         }
 
-        .contact-link {
+        .contact a {
             color: #0b3d91;
+            text-decoration: none;
             font-weight: bold;
         }
 
-        .contact-link:hover {
+        .contact a:hover {
             text-decoration: underline;
         }
 
         .social {
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .social a {
             display: inline-block;
-            margin: 5px 15px 5px 0;
-            color: #0b3d91;
-            font-weight: bold;
+            margin-top: 5px;
         }
 
-        .social a:hover {
-            text-decoration: underline;
-        }
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             background: #0b3d91;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 22px;
         }
 
-        footer p {
-            margin: 5px 0;
-        }
+
+        /* =========================
+           MOBILE / PHONE
+        ========================= */
 
         @media (max-width: 768px) {
 
             header {
-                padding: 15px 5%;
+                padding: 10px 4%;
             }
 
             nav {
                 flex-direction: column;
-                gap: 15px;
+                gap: 8px;
+            }
+
+            nav h2 {
+                font-size: 18px;
             }
 
             nav ul {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 12px;
+                gap: 6px 10px;
             }
 
             nav ul li a {
-                font-size: 14px;
+                font-size: 12px;
             }
 
+
+            /* SMALL HOME */
+
             .hero {
-                padding: 60px 5%;
+                padding: 35px 5%;
+            }
+
+            .hero img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 10px;
+                border-width: 3px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 24px;
+                margin-bottom: 3px;
             }
 
-            .profession {
-                font-size: 18px;
+            .hero h2 {
+                font-size: 16px;
+                margin-bottom: 8px;
             }
+
+            .hero p {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 12px;
+            }
+
+
+            /* BUTTONS */
+
+            .btn {
+                padding: 8px 13px;
+                font-size: 13px;
+            }
+
+
+            /* SECTIONS */
 
             section {
-                padding: 50px 5%;
+                padding: 35px 5%;
             }
 
             section h2 {
-                font-size: 26px;
+                font-size: 22px;
+                margin-bottom: 18px;
             }
 
-            .profile-image {
-                width: 150px;
-                height: 150px;
+
+            /* ABOUT & CONTACT */
+
+            .about,
+            .contact {
+                padding: 18px;
+                font-size: 14px;
             }
+
+
+            /* CARDS */
+
+            .card {
+                padding: 17px;
+                font-size: 14px;
+            }
+
+            .card h3 {
+                font-size: 17px;
+            }
+
+
+            /* SKILLS */
+
+            .skill {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+
+            /* FOOTER */
+
+            footer {
+                padding: 18px;
+                font-size: 12px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-<header>
-    <nav>
-        <h2>HAMAD M YAHAYA</h2>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-<section class="hero" id="home">
+    <header>
 
-    <img
-        src="260721214706132.JPG"
-        alt="HAMAD M YAHAYA"
-        class="profile-image"
-    >
+        <nav>
 
-    <h1>HAMAD M YAHAYA</h1>
+            <h2>HAMAD M YAHAYA</h2>
 
-    <p class="profession">
-        Procurement and Supply Student
-    </p>
+            <ul>
 
-    <p>
-        Welcome to my personal website. Here you can learn more about
-        my education, professional experience, skills, achievements,
-        and career journey.
-    </p>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-    <br>
+                <li>
+                    <a href="#about">About</a>
+                </li>
 
-    <a href="#about" class="btn">
-        Learn More About Me
-    </a>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
 
-</section>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
 
-<section id="about">
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
 
-    <h2>About Me</h2>
+                <li>
+                    <a href="#cv">CV</a>
+                </li>
 
-    <div class="about">
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
-        <p>
-            My name is Hamad M Yahaya, a Procurement and Supply student
-            with an academic background in Procurement and Supply.
-            I am passionate about procurement, supply chain management,
-            inventory management, logistics, supplier relationship
-            management, and business development.
-        </p>
+            </ul>
 
-        <p>
-            Through my academic journey and practical field training
-            experience at BASATA and BRELA, I have developed valuable
-            skills in communication, teamwork, problem-solving,
-            inventory-related activities, and supplier coordination.
-            These experiences have helped me understand the importance
-            of professionalism, accountability, efficiency, and effective
-            collaboration in achieving organizational goals.
-        </p>
+        </nav>
 
-        <p>
-            I am a motivated, adaptable, and hardworking individual who
-            is always willing to learn, develop new skills, and take on
-            new challenges. I believe in continuous personal and
-            professional development and I am interested in opportunities
-            that allow me to apply my knowledge, gain experience, and
-            make a positive contribution to organizations and communities.
-        </p>
+    </header>
 
-        <p>
-            This website serves as my personal digital profile, where I
-            share information about my education, professional journey,
-            skills, achievements, interests, and future goals.
-        </p>
 
-    </div>
+    <!-- =========================
+         HOME
+    ========================= -->
 
-</section>
+    <section class="hero" id="home">
 
-<section id="education">
-
-    <h2>Education</h2>
-
-    <div class="education">
-
-        <div class="card">
-
-            <h3>
-                Ordinary Diploma in Procurement and Supply
-            </h3>
-
-            <p>
-                <strong>Institution:</strong>
-                The Mwalimu Nyerere Memorial Academy (MNMA)
-            </p>
-
-            <p>
-                <strong>Field of Study:</strong>
-                Procurement and Supply
-            </p>
-
-            <p>
-                <strong>Duration:</strong>
-                2023 – 2026
-            </p>
-
-            <p>
-                Studied an Ordinary Diploma program focused on Procurement
-                and Supply, gaining academic knowledge and practical
-                understanding of procurement, supply chain management,
-                inventory management, logistics, and supplier coordination.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="experience">
-
-    <h2>Experience</h2>
-
-    <div class="experience">
-
-        <div class="card">
-
-            <h3>Field Training – BASATA</h3>
-
-            <p>
-                Gained practical exposure to organizational activities,
-                communication, teamwork, and professional working
-                environments.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Field Training – BRELA</h3>
-
-            <p>
-                Gained practical experience in workplace activities,
-                communication, teamwork, inventory-related activities,
-                and supplier coordination.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="skills">
-
-    <h2>Skills &amp; Competencies</h2>
-
-    <div class="skills-list">
-
-        <span class="skill">Procurement</span>
-        <span class="skill">Supply Chain Management</span>
-        <span class="skill">Inventory Management</span>
-        <span class="skill">Supplier Coordination</span>
-        <span class="skill">Communication</span>
-        <span class="skill">Teamwork</span>
-        <span class="skill">Problem Solving</span>
-        <span class="skill">Microsoft Office</span>
-
-    </div>
-
-</section>
-
-<section id="cv">
-
-    <h2>My CV</h2>
-
-    <div class="cv-box">
-
-        <p>
-            You can view or download my CV to learn more about my
-            education, experience, skills, and professional background.
-        </p>
-
-        <a
-            href="HAMAD_CV.pdf"
-            target="_blank"
-            class="btn"
+        <img
+            src="260721214706132.JPG"
+            alt="Hamad Maulidi Yahaya"
         >
-            View My CV
-        </a>
 
-        <a
-            href="HAMAD_CV.pdf"
-            download
-            class="btn"
-        >
-            Download My CV
-        </a>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact">
-
-        <p>
-            <strong>Name:</strong>
+        <h1>
             HAMAD M YAHAYA
+        </h1>
+
+        <h2>
+            Procurement and Supply Student
+        </h2>
+
+        <p>
+            Welcome to my personal website. Here you can learn more about
+            my education, professional experience, skills, achievements,
+            and career journey.
+        </p>
+
+        <a
+            href="#about"
+            class="btn"
+        >
+            Learn More About Me
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section id="about">
+
+        <h2>
+            About Me
+        </h2>
+
+        <div class="about">
+
+            <p>
+                My name is Hamad Maulidi Yahaya, a Procurement and Supply
+                student with an academic background in Procurement and Supply.
+                I am passionate about procurement, supply chain management,
+                inventory management, logistics, supplier relationship
+                management, and business development.
+            </p>
+
+            <br>
+
+            <p>
+                Through my academic journey and practical field training
+                experience at BASATA and BRELA, I have developed valuable
+                skills in communication, teamwork, problem-solving,
+                inventory-related activities, and supplier coordination.
+                These experiences have helped me understand the importance
+                of professionalism, accountability, efficiency, and effective
+                collaboration in achieving organizational goals.
+            </p>
+
+            <br>
+
+            <p>
+                I am a motivated, adaptable, and hardworking individual who
+                is always willing to learn, develop new skills, and take on
+                new challenges. I believe in continuous personal and
+                professional development and I am interested in opportunities
+                that allow me to apply my knowledge, gain experience, and
+                make a positive contribution to organizations and communities.
+            </p>
+
+            <br>
+
+            <p>
+                This website serves as my personal digital profile, where I
+                share information about my education, professional journey,
+                skills, achievements, interests, and future goals.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EDUCATION
+    ========================= -->
+
+    <section id="education">
+
+        <h2>
+            Education
+        </h2>
+
+        <div class="education">
+
+            <div class="card">
+
+                <h3>
+                    Ordinary Diploma in Procurement and Supply
+                </h3>
+
+                <p>
+                    <strong>Institution:</strong>
+                    The Mwalimu Nyerere Memorial Academy (MNMA)
+                </p>
+
+                <p>
+                    <strong>Field of Study:</strong>
+                    Procurement and Supply
+                </p>
+
+                <p>
+                    <strong>Duration:</strong>
+                    2023 – 2026
+                </p>
+
+                <br>
+
+                <p>
+                    Studied an Ordinary Diploma program focused on Procurement
+                    and Supply, gaining academic knowledge and practical
+                    understanding of procurement, supply chain management,
+                    inventory management, logistics, and supplier coordination.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================= -->
+
+    <section id="experience">
+
+        <h2>
+            Experience
+        </h2>
+
+        <div class="experience">
+
+            <div class="card">
+
+                <h3>
+                    Field Training – BASATA
+                </h3>
+
+                <p>
+                    Gained practical exposure to organizational activities,
+                    communication, teamwork, and professional working
+                    environments.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Field Training – BRELA
+                </h3>
+
+                <p>
+                    Gained practical experience in workplace activities,
+                    communication, teamwork, inventory-related activities,
+                    and supplier coordination.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section id="skills">
+
+        <h2>
+            Skills &amp; Competencies
+        </h2>
+
+        <div class="skills-list">
+
+            <span class="skill">
+                Procurement
+            </span>
+
+            <span class="skill">
+                Supply Chain Management
+            </span>
+
+            <span class="skill">
+                Inventory Management
+            </span>
+
+            <span class="skill">
+                Supplier Coordination
+            </span>
+
+            <span class="skill">
+                Communication
+            </span>
+
+            <span class="skill">
+                Teamwork
+            </span>
+
+            <span class="skill">
+                Problem Solving
+            </span>
+
+            <span class="skill">
+                Microsoft Office
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CV
+    ========================= -->
+
+    <section id="cv">
+
+        <h2>
+            My CV
+        </h2>
+
+        <div class="about">
+
+            <p>
+                You can view or download my CV to learn more about my
+                education, experience, skills, and professional background.
+            </p>
+
+            <div
+                style="margin-top: 20px; text-align: center;"
+            >
+
+                <a
+                    href="HAMAD_CV.pdf"
+                    target="_blank"
+                    class="btn"
+                >
+                    View My CV
+                </a>
+
+
+                <a
+                    href="HAMAD_CV.pdf"
+                    download
+                    class="btn"
+                >
+                    Download My CV
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section id="contact">
+
+        <h2>
+            Contact Me
+        </h2>
+
+        <div class="contact">
+
+            <p>
+                <strong>Name:</strong>
+                Hamad Maulidi Yahaya
+            </p>
+
+
+            <p>
+
+                <strong>Email:</strong>
+
+                <a
+                    href="mailto:hamadyahaya200@gmail.com"
+                >
+                    hamadyahaya200@gmail.com
+                </a>
+
+            </p>
+
+
+            <p>
+
+                <strong>Phone:</strong>
+
+                <a
+                    href="tel:+255619797651"
+                >
+                    +255 619 797 651
+                </a>
+
+            </p>
+
+
+            <br>
+
+
+            <div class="social">
+
+                <p>
+                    <strong>Social Media:</strong>
+                </p>
+
+
+                <span>
+                    Facebook — Hamad Yahaya
+                </span>
+
+                <br>
+
+
+                <a
+                    href="https://www.instagram.com/?hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram — hamad_yahaya2
+                </a>
+
+                <br>
+
+
+                <span>
+                    LinkedIn
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Hamad Maulidi Yahaya. All Rights Reserved.
         </p>
 
         <p>
-            <strong>Email:</strong>
-
-            <a
-                href="mailto:hamadyahaya200@gmail.com"
-                class="contact-link"
-            >
-                hamadyahaya200@gmail.com
-            </a>
+            Personal Website
         </p>
 
-        <p>
-            <strong>Phone:</strong>
+    </footer>
 
-            <a
-                href="tel:+255619797651"
-                class="contact-link"
-            >
-                +255 619 797 651
-            </a>
-        </p>
-
-        <div class="social">
-
-    <p>
-        <strong>Social Media:</strong>
-    </p>
-
-    <a href="#" target="_blank" rel="noopener">
-        Facebook
-    </a>
-
-    <a href="https://www.instagram.https://www.instagram.com/?hl=en                 class="contact-link"
-
-    </a>
-
-    <a href="#" target="_blank" rel="noopener">
-        LinkedIn
-    </a>
-
-</div>
-    </div>
-
-</section>
-
-<footer>
-
-    <p>
-        © 2026 HAMAD M YAHAYA. All Rights Reserved.
-    </p>
-
-    <p>
-        Personal Website
-    </p>
-
-</footer>
 
 </body>
+
 </html>
